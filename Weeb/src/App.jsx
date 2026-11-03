@@ -5,6 +5,8 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import Articles from './pages/Articles';
+import ResetPassword from './pages/ResetPassword';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/articles/*" element={<Articles />} />
       </Routes>
       <Footer />
     </div>
